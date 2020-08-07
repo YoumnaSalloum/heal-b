@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
  function handleOnclick(event){
   event.preventDefault();
   console.log(event.target.id)
- $.post('http://localhost:8000/delete',{myData:{billId:event.target.id,userid:localStorage.getItem('id')}})
+ $.post('/delete',{myData:{billId:event.target.id,userid:localStorage.getItem('id')}})
   .done( (result) =>{ console.log(result)
       
       console.log(result)

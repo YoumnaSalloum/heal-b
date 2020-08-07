@@ -47,7 +47,7 @@ class Signup extends Component {
   handleSignUp(event){
     if(this.handleValidation()){
       var user = {userName:$('#firstName').val(),phoneNumber:$('#phoneNumber').val(),email:$('#email').val(),password:$('#password').val()}
-      $.post('http://localhost:8000/signUp',
+      $.post('/signUp',
       { myData: user })
       .done(function () { alert(user.userName); })
       .fail(function (jqxhr, settings, ex) { alert('failed, ' + ex); });

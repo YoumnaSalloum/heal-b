@@ -63,7 +63,7 @@ function  Profilee (props) {
       const myData = {email:email}
     axios
     
-    .post("http://localhost:8000/mypost",myData)
+    .post("/mypost",myData)
 
     .then(response => {
       console.log(response.data.FoodCategories)
