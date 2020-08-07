@@ -30,6 +30,15 @@ app.get("/select", function (req, res) {
     res.send(result[0].hospitalBill);
   });
 });
+
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("healersapp/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "healersapp", "build", "index.html"));
+  });
+}
+
 app.get("/mayis",(req,res)=>{
   User.find({}).then(function (result) {
     console.log(result);
