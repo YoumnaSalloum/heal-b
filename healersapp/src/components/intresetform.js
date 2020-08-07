@@ -35,7 +35,7 @@ console.log($)
     handle(event){
     
   var user = {id:localStorage.getItem('id'),payment:$('#pay').val(),selected:$('#select').val()}
-      axios.post('http://localhost:8000/send', user)
+      axios.post('/send', user)
           .then((res) => {
               console.log(res.data)
 

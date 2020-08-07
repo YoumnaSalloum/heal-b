@@ -193,7 +193,7 @@ class HospitalBill extends React.Component {
   //youmna
   async componentDidMount() {
     const that = this;
-    await $.get("http://localhost:8000/mayis")
+    await $.get("/mayis")
       .done((result) => {
         console.log(result);
         that.setState({ storeMe: result });

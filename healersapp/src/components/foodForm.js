@@ -81,7 +81,7 @@ export default class FoodForm  extends React.Component {
       },
     };
     axios
-      .post("http://localhost:8000/load", formData, post, config)
+      .post("/load", formData, post, config)
       .then((response) => {
         //alert("The file is successfully uploaded");
         console.log(response);

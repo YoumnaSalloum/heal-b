@@ -175,7 +175,7 @@ function NavBar() {
     // history.push("/login");
     //clear
     window.localStorage.clear();
-    axios.get('http://localhost:8000/logout')
+    axios.get('/logout')
       .then((res) => {
         history.push("/");
 

@@ -47,7 +47,7 @@ class BillForm extends React.Component {
       // history.push("/login");
       //clear
       window.localStorage.clear();
-      axios.get('http://localhost:8000/logout')
+      axios.get('/logout')
         .then((res) => {
           history.push("/");
 
@@ -90,7 +90,7 @@ class BillForm extends React.Component {
     };
     
     axios
-      .post("http://localhost:8000/upload", formData, bill, config)
+      .post("/upload", formData, bill, config)
       .then((response) => {
         //alert("The file is successfully uploaded");
         console.log(response);
