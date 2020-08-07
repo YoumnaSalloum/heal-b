@@ -14,7 +14,7 @@ app.use(
     resave: true,
     saveUninitialized: true
 }));
-const User = require('../db/mongo');
+const User = require('./db/mongo');
 // let port = 8000
 app.use(bodyParser.json());
 app.use(cors());

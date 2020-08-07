@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const mongoose = require('mongoose')
-const HospitalPost = require('../../db/mongo');
+const HospitalPost = require('../db/mongo');
 
 router.get('/allpost',(req,res)=>{
     HospitalPost.find()

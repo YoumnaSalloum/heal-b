@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const express =require ('express')
 //youmna
 var path = require('path')
-const User = require('../../db/mongo');
+const User = require('../db/mongo');
 var multer = require('multer')
 var nodemailer = require('nodemailer');
 var session = require('express-session');
