@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 require("dotenv").config(); // to read .env file
-const users = require("./routes/Users.js")
+const users = require("./routes/users.js")
 app.use(users);
 app.get("/select", function (req, res) {
   var bill2 = { amount: 900, hospitalName: "lol0" };
