@@ -23,6 +23,7 @@ import Button from "@material-ui/core/Button";
 import $ from "jquery";
 import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
+
 //test
 //       {/**./../../../server-side/public/uploads/${bill.photo.slice(7)} */}
 //import Pic from '../../../server-side/public/uploads/IMAGE-1595262248867.jpg'
@@ -113,7 +114,7 @@ function MakePost(props) {
                     <img
                       width="210px"
                       length="200px"
-                      src={require(`./../../../public/uploads/${bill.photo.slice(
+                      src={require(`../../../public/uploads/${bill.photo.slice(
                         17
                       )}`)}
                     />
