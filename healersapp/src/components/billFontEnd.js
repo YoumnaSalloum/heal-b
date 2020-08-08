@@ -173,7 +173,7 @@ function MakePost(props){
 }
 async componentDidMount(){  
      const that = this
-await $.get('/mayis')
+  await $.get('http://localhost:8000/mayis')
    .done( (result) =>{ console.log(result)
        that.setState({storeMe:result})
        console.log(that.state.storeMe)

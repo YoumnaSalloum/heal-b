@@ -62,7 +62,7 @@ class Login  extends Component {
    this.setState( {id:localStorage.getItem('id')})
 var user={id:this.state.id,email:$('#email').val(),password:$('#password').val()}
 
-$.post('/login',{myData: user })
+    $.post('http://localhost:8000/login',{myData: user })
 .done(function () { alert(user.userName); 
   
 })

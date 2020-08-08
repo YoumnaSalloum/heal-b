@@ -47,7 +47,7 @@ class BillForm extends React.Component {
       // history.push("/login");
       //clear
       window.localStorage.clear();
-      axios.get('/logout')
+      axios.get('http://localhost:8000/logout')
         .then((res) => {
           history.push("/");
 

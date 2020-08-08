@@ -113,7 +113,7 @@ function MakePost(props) {
                     <img
                       width="210px"
                       length="200px"
-                      src={require(`./../../../server-side/public/uploads/${bill.photo.slice(
+                      src={require(`./../../../public/uploads/${bill.photo.slice(
                         17
                       )}`)}
                     />
@@ -193,7 +193,7 @@ class HospitalBill extends React.Component {
   //youmna
   async componentDidMount() {
     const that = this;
-    await $.get("/mayis")
+    await $.get("http://localhost:8000/mayis")
       .done((result) => {
         console.log(result);
         that.setState({ storeMe: result });
