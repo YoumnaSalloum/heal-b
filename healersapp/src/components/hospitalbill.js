@@ -114,7 +114,8 @@ function MakePost(props) {
                     <img
                       width="210px"
                       length="200px"
-                      src={require(`../../../public/uploads${bill.photo.slice(17)}`)}
+                      // {/*src={require(`../../../public/uploads${bill.photo.slice(17)}`)}*/}
+                      src={require('../../../public/uploads/IMAGE-1596870406760.png')}
                     />
                     {/* <img src={'../../../server-side/'+bill.photo} /> */}
                     {/* <img src={require('./../../../server-side/public/uploads/IMAGE-1595262248867.jpg')}/> */}
