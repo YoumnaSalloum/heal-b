@@ -161,7 +161,7 @@ function  Profile (props) {
                       title="Hospital Bill"
                       subheader=""
                       />
-                      <img width='210px' length='200px' src={require(`./../../../server-side/public/uploads/${item.photo.slice(17)}`)}/>
+                      <img width='210px' length='200px' src={require(`./../../../public/uploads/${item.photo.slice(17)}`)}/>
                       <CardContent>
                       <Typography variant="body2" color="textSecondary" component="p">
                       Bill amount:{item.amount}
